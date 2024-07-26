@@ -3,5 +3,10 @@
 <meta name="color-scheme" content="light dark">
 </head>
 <body>
-<a href="sov://api.key?key=1111"> link </a>
+<script> 
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+window.open("sov://api.key?key=1111");
+close();
+</script>
 </body></html>
