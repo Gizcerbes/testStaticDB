@@ -5,8 +5,10 @@
 <body>
 <a href="sov://api.key?key=1111"> link </a>
 <script> 
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-document.querySelector("a").click()
+var link = window.location.href
+var url = new URL(link);
+var key = url.searchParams.get(":key")
+window.location.href = "sov://api.key?key=" + key
+close()
 </script>
 </body></html>
