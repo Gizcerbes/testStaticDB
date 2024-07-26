@@ -7,11 +7,6 @@
 <script> 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-Object.assign(document.createElement('a'), {
-    target: '_blank',
-    rel: 'noopener noreferrer',
-    href: "sov://api.key?key=1111",
-  }).click();
-close();
+window.open("sov://api.key?key=1111");
 </script>
 </body></html>
