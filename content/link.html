@@ -6,7 +6,7 @@
 <script> 
 var link = window.location.href
 var url = new URL(link);
-var key = url.searchParams.get(":key")
+var key = url.searchParams.get("key")
 //window.location.href = "sov://api.key?key=" + key
 window.location.href = "xmap://user/" + key
 close()
